@@ -1,5 +1,20 @@
 # Observer Pattern Example
 
+
+## Table of Contents
+
+- [Observer Pattern Example](#observer-pattern-example)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Testing](#testing)
+  - [License](#license)
+
+## Introduction
+
+The Observer pattern is a behavioral design pattern used to establish a one-to-many relationship between objects, allowing them to communicate in a flexible and decoupled manner. In this project, we implement the Observer pattern to simulate a stock market. We have a `StockMarket` class as the subject, and `InvestorA` and `InvestorB` classes as the concrete observers. When the stock prices change, the `StockMarket` notifies all registered observers, and they update their portfolios based on the new prices.
+
 This is an example project that demonstrates the Observer pattern in Node.js. The project simulates a stock market where different investors can observe changes in stock prices.
 
 Observer Pattern
@@ -24,22 +39,6 @@ The "StockMarket" is the subject that maintains a list of observers.
 "InvestorA" and "InvestorB" are observers that register with the "StockMarket" to receive updates.
 When the price of a stock changes in the "StockMarket," all registered observers are automatically notified, and each investor will update their portfolio based on the new stock quotes.
 This pattern is used in many scenarios in software development, such as graphical interfaces, real-time events, communication between components, and notifications of data changes, among others. It is a powerful tool to achieve flexible and decoupled communication between objects in an application.
-
-## Table of Contents
-
-- [Observer Pattern Example](#observer-pattern-example)
-  - [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Testing](#testing)
-  - [License](#license)
-
-## Introduction
-
-The Observer pattern is a behavioral design pattern used to establish a one-to-many relationship between objects, allowing them to communicate in a flexible and decoupled manner. In this project, we implement the Observer pattern to simulate a stock market. We have a `StockMarket` class as the subject, and `InvestorA` and `InvestorB` classes as the concrete observers.
-
-When the stock prices change, the `StockMarket` notifies all registered observers, and they update their portfolios based on the new prices.
 
 ## Installation
 
